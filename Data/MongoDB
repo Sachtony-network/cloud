@@ -1,0 +1,11 @@
+db.user:
+{_id: "abc",
+email: "xyz@sachtony.com",
+preferences: {alerts:[name: "morning", frequency: "daily", time: {h: 6, m: 0}},  ...],
+              colors: {bg: "#cccccc", ...}}
+};
+db.business:
+{_id: "def",
+name: "Sachtony Go",
+addresses: [street:[name: "40 elm", state: "NY"}, {street: "101 main St", state: "VT"}]
+}
