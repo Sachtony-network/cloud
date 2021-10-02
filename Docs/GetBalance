@@ -1,0 +1,1 @@
+http://rest.esms.vn/MainService.svc/{ResponseType}/GetBalance/{ApiKey}/{SecretKey}
