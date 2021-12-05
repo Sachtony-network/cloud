@@ -1,0 +1,95 @@
+{
+    "TenantId": "f0fae2c0-c182-45fa-87b9-4d2bab321dc5",
+    "id": "cf999936-8b84-4b3e-82ff-95e967a5ebf3",
+	"acceptMappedClaims": null,
+	"accessTokenAcceptedVersion": null,
+	"addIns": ["AppDomain.xml"],
+	"allowPublicClient": false,
+	"appId": "bcab430d-9773-4a91-8cf2-4104678051d0",
+	"appRoles": [
+		{
+			"allowedMemberTypes": [
+				"Admin"
+			],
+			"description": "msiam_access",
+			"displayName": "msiam_access",
+			"id": "93619254-dea7-4abb-8354-01ae2d9b781d",
+			"isEnabled": true,
+			"lang": null,
+			"origin": "Application",
+			"value": null
+		},
+		{
+			"allowedMemberTypes": [
+				"User"
+			],
+			"description": "User",
+			"displayName": "User",
+			"id": "e7bdf2ef-aa80-4a18-9801-0aa9e01feb8c",
+			"isEnabled": true,
+			"lang": null,
+			"origin": "Application",
+			"value": null
+		}
+	],
+	"oauth2AllowUrlPathMatching": false,
+	"createdDateTime": "2018-11-27T09:28:31Z",
+	"groupMembershipClaims": null,
+	"identifierUris": [
+		"https://azure.microsoft.com/?TenantId=f0fae2c0-c182-45fa-87b9-4d2bab321dc5&AppID=bcab430d-9773-4a91-8cf2-4104678051d0/"
+	],
+	"informationalUrls": {
+		"termsOfService": null,
+		"support": null,
+		"privacy": null,
+		"marketing": null
+	},
+	"keyCredentials": [],
+	"knownClientApplications": [],
+	"logoUrl": "https://secure.aadcdn.microsoftonline-p.com/dbd5a2dd-jz2wlmp-guuz2a4zru75s34wczusinfgh0x4herldqo/appbranding/dp-7qkp9xvqrne8fs-ubjg9msi-spbdqoqq3wvnm4e/1033/bannerlogo?ts=637096065472544062",
+	"logoutUrl": null,
+	"name": "Domain Controller Services",
+	"oauth2AllowIdTokenImplicitFlow": true,
+	"oauth2AllowImplicitFlow": true,
+	"oauth2Permissions": [
+		{
+			"adminConsentDescription": "Allow the application to access Domain Controller Services on behalf of the signed-in user.",
+			"adminConsentDisplayName": "Access Domain Controller Services",
+			"id": "4a813028-dfe6-4aec-8eda-eabc469e16b3",
+			"isEnabled": true,
+			"lang": null,
+			"origin": "Application",
+			"type": "User",
+			"userConsentDescription": "Allow the application to access Domain Controller Services on your behalf.",
+			"userConsentDisplayName": "Access Domain Controller Services",
+			"value": "user_impersonation"
+		}
+	],
+	"oauth2RequirePostResponse": false,
+	"optionalClaims": null,
+	"orgRestrictions": [],
+	"parentalControlSettings": {
+		"countriesBlockedForMinors": [],
+		"legalAgeGroupRule": "Allow"
+	},
+	"passwordCredentials": [],
+	"preAuthorizedApplications": [],
+	"publisherDomain": "sachtony.com",
+	"replyUrlsWithType": [
+		{
+			"url": "https://dns.sachtony.com/?TenantId=f0fae2c0-c182-45fa-87b9-4d2bab321dc5&AppID=bcab430d-9773-4a91-8cf2-4104678051d0/",
+			"type": "Spa"
+		}
+	],
+	"requiredResourceAccess": [],
+	"samlMetadataUrl": null,
+	"signInUrl": "https://dns.sachtony.com/?TenantId=f0fae2c0-c182-45fa-87b9-4d2bab321dc5&AppID=bcab430d-9773-4a91-8cf2-4104678051d0/",
+	"signInAudience": "AzureADMyOrg",
+	"tags": [],
+	"tokenEncryptionKeyId": null,
+	"verifiedPublisher": {
+		"displayName": null,
+		"verifiedPublisherId": null,
+		"addedDateTime": null
+	}
+}
