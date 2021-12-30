@@ -12,14 +12,18 @@
         </tr>
       </table>
 </div>
-  <div ng-include="'https://api-m.paypal.com/angular_include.php'"></div>
+  <div ng-include="'https://api.paypal.com/angular_include.php'"></div>
 
 <script>
 var app = angular.module('myApp', [])
 
 app.config(function($sceDelegateProvider) {
   $sceDelegateProvider.resourceUrlWhitelist([
-    'https://api-m.paypal.com/**'
+    'https://api-m.paypal.com/**',
+    'https://api.paypal.com/**',
+    'https://paypal.com/**',
+    'https://sandbox.paypal.com/**',
+    'https://developer.paypal.com/**'
   ]);
 });
 
