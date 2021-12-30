@@ -1,1 +1,23 @@
-"Domain": ["Domains.xml"],
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="myCloud">
+
+<div ng-include="'https://cloud.sachtony.com/angular_include.php'"></div>
+
+<script>
+var app = angular.module('myCloud', [])
+
+app.config(function($sceDelegateProvider) {
+  $sceDelegateProvider.resourceUrlWhitelist([
+    'https://cloud.sachtony.com/**',
+    'https://console.cloud.google.com/**',
+    'https://apple.com/**',
+    'https://microsoft.com/**'
+  ]);
+});
+
+</script>
+
+</body>
+</html>
