@@ -3,7 +3,7 @@
     "id": "cf999936-8b84-4b3e-82ff-95e967a5ebf3",
 	"acceptMappedClaims": null,
 	"accessTokenAcceptedVersion": null,
-	"addIns": [Google Domains],
+	"addIns": [https://domains.sachtony.com],
 	"allowPublicClient": false,
 	"appId": "bcab430d-9773-4a91-8cf2-4104678051d0",
 	"appRoles": [
