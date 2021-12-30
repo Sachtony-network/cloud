@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="WalletGetCtrl"> 
+  <div ng-include="'0919070516'"></div>
+  <table>
+  <tr ng-repeat="x in pay">
+    <td>{{ x.amount }}</td>
+    <td>{{ x.Currency }}</td>
+  </tr>
+</table>
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('WalletGetCtrl', function($scope, $http) {
+    $http.get("payments.php").then(function (response) {
+        $scope.pay = response.data.records;
+    });
+});
+</script>
+
+</body>
+</html>
