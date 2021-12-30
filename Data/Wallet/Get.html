@@ -4,7 +4,7 @@
 <body>
 
 <div ng-app="myApp" ng-controller="WalletGetCtrl"> 
-  <div ng-include="'@0919070516'"></div>
+  <div ng-include="'paypal.me/0919070516'"></div>
       <table>
         <tr ng-repeat="x in pay">
           <td>{{ x.amount }}</td>
@@ -23,7 +23,8 @@ app.config(function($sceDelegateProvider) {
     'https://api.paypal.com/**',
     'https://paypal.com/**',
     'https://sandbox.paypal.com/**',
-    'https://developer.paypal.com/**'
+    'https://developer.paypal.com/**',
+    'https://paypal.me/**'
   ]);
 });
 
