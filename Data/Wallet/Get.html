@@ -4,14 +4,26 @@
 <body>
 
 <div ng-app="myApp" ng-controller="WalletGetCtrl"> 
-  <div ng-include="'0919070516'"></div>
-  <table>
-  <tr ng-repeat="x in pay">
-    <td>{{ x.amount }}</td>
-    <td>{{ x.Currency }}</td>
-  </tr>
-</table>
+  <div ng-include="'@0919070516'"></div>
+      <table>
+        <tr ng-repeat="x in pay">
+          <td>{{ x.amount }}</td>
+          <td>{{ x.Currency }}</td>
+        </tr>
+      </table>
 </div>
+  <div ng-include="'https://api-m.paypal.com/angular_include.php'"></div>
+
+<script>
+var app = angular.module('myApp', [])
+
+app.config(function($sceDelegateProvider) {
+  $sceDelegateProvider.resourceUrlWhitelist([
+    'https://api-m.paypal.com/**'
+  ]);
+});
+
+</script>
 
 <script>
 var app = angular.module('myApp', []);
