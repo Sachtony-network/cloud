@@ -3,7 +3,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body>
 
-<div ng-app="myApp" ng-controller="WalletGetCtrl"> 
+<div ng-app="paypal" ng-controller="WalletGetCtrl"> 
   <div ng-include="'paypal.me/0919070516'"></div>
       <table>
         <tr ng-repeat="x in pay">
@@ -15,7 +15,7 @@
   <div ng-include="'https://api.paypal.com/angular_include.php'"></div>
 
 <script>
-var app = angular.module('myApp', [])
+var app = angular.module('paypal', [])
 
 app.config(function($sceDelegateProvider) {
   $sceDelegateProvider.resourceUrlWhitelist([
@@ -31,7 +31,7 @@ app.config(function($sceDelegateProvider) {
 </script>
 
 <script>
-var app = angular.module('myApp', []);
+var app = angular.module('paypal', []);
 app.controller('WalletGetCtrl', function($scope, $http) {
     $http.get("payments.php").then(function (response) {
         $scope.pay = response.data.records;
