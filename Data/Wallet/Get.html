@@ -7,6 +7,7 @@
   <div ng-include="'paypal.me/0919070516'"></div>
       <table>
         <tr ng-repeat="x in pay">
+          <td>{{ x.account }}</td>
           <td>{{ x.amount }}</td>
           <td>{{ x.Currency }}</td>
         </tr>
