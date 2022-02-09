@@ -1,4 +1,2 @@
 "$schema": "http://json-schema.org/schema",
-"$payments": {
-  
-}
+"$payments": {[$Data]}
